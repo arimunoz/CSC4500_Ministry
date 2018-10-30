@@ -1,0 +1,32 @@
+<%= form_with(model: church_name, local: true) do |form| %>
+  <% if church_name.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(church_name.errors.count, "error") %> prohibited this church_name from being saved:</h2>
+
+      <ul>
+      <% church_name.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :church_name %>
+    <%= form.text_field :church_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pastor_name %>
+    <%= form.text_field :pastor_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mens_leader %>
+    <%= form.text_field :mens_leader %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

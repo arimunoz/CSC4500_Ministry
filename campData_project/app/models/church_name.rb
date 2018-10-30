@@ -1,0 +1,2 @@
+class ChurchName < ApplicationRecord
+end

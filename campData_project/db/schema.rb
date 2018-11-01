@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_10_30_174419) do
 
-  create_table "camp_members", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "camp_members", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "street"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_10_30_174419) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "church_names", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "church_names", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "church_name"
     t.string "pastor_name"
     t.string "mens_leader"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2018_10_30_174419) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "emergency_contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "emergency_contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "phone_number", limit: 12
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2018_10_30_174419) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "payment_informations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "payment_informations", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "name_on_card"
     t.string "card_number"
     t.date "expiration_date"

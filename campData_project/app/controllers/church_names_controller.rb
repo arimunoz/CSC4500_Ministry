@@ -1,4 +1,9 @@
 class ChurchNamesController < ApplicationController
+
+  belongs_to :camp_members, class_name: "camp_member",
+                            foreign_key: "id"
+
+
   before_action :set_church_name, only: [:show, :edit, :update, :destroy]
 
   # GET /church_names

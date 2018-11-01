@@ -1,4 +1,11 @@
 class EmergencyContactsController < ApplicationController
+
+
+  belongs_to :camp_members, class_name: "camp_member",
+                            foreign_key: "id"
+
+
+
   before_action :set_emergency_contact, only: [:show, :edit, :update, :destroy]
 
   # GET /emergency_contacts

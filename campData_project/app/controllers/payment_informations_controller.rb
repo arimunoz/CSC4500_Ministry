@@ -1,7 +1,5 @@
 class PaymentInformationsController < ApplicationController
 
-  belongs_to :camp_members, class_name: "camp_member",
-                            foreign_key: "id"
 
 
   before_action :set_payment_information, only: [:show, :edit, :update, :destroy]

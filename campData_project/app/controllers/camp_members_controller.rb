@@ -1,12 +1,6 @@
 class CampMembersController < ApplicationController
 
 
-  has_one :church_names, class_name: "camp_member",
-                        foreign_key: "id"
-  has_one :emergency_contacts, class_name: "camp_member",
-                        foreign_key: "id"
-
-
 
 
   before_action :set_camp_member, only: [:show, :edit, :update, :destroy]

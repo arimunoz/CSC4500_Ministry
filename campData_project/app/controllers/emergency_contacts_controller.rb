@@ -1,12 +1,8 @@
+# frozen_string_literal: true
+
 class EmergencyContactsController < ApplicationController
 
-
-  belongs_to :camp_members, class_name: "camp_member",
-                            foreign_key: "id"
-
-
-
-  before_action :set_emergency_contact, only: [:show, :edit, :update, :destroy]
+  before_action :set_emergency_contact, only: %i[show edit update destroy]
 
   # GET /emergency_contacts
   # GET /emergency_contacts.json
@@ -16,8 +12,7 @@ class EmergencyContactsController < ApplicationController
 
   # GET /emergency_contacts/1
   # GET /emergency_contacts/1.json
-  def show
-  end
+  def show; end
 
   # GET /emergency_contacts/new
   def new
@@ -25,8 +20,7 @@ class EmergencyContactsController < ApplicationController
   end
 
   # GET /emergency_contacts/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /emergency_contacts
   # POST /emergency_contacts.json
@@ -69,13 +63,14 @@ class EmergencyContactsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_emergency_contact
-      @emergency_contact = EmergencyContact.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def emergency_contact_params
-      params.require(:emergency_contact).permit(:first_name, :last_name, :phone_number, :relationship)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_emergency_contact
+    @emergency_contact = EmergencyContact.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def emergency_contact_params
+    params.require(:emergency_contact).permit(:first_name, :last_name, :phone_number, :relationship)
+  end
 end

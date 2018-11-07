@@ -1,4 +1,8 @@
 class CampMembersController < ApplicationController
+
+
+
+
   before_action :set_camp_member, only: [:show, :edit, :update, :destroy]
 
   # GET /camp_members

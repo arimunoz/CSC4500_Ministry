@@ -5,7 +5,6 @@ class CreateEmergencyContacts < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :phone_number, limit: 12
       t.string :relationship
-
       t.timestamps
     end
   end

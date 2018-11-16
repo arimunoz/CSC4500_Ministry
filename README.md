@@ -5,6 +5,7 @@ You should probably create a new project from this.
 It will break if you attempt to merge. 
 Also, if you're using mac, edit the socket in the database.yml
 and put in your password. Then run:
+* bundle install
 * rake db:create
 * rake db:migrate
 * rails s

@@ -1,0 +1,20 @@
+Basic Syntax for Triggers:
+CREATE TRIGGER triggerName triggerTime triggerEvent 
+ON tableName
+FOR EACH ROW
+
+BEGIN
+............
+END;
+
+For triggerName: is the name of a trigger; you can
+call it whatever the purpose of that trigger.
+
+For triggerTime: to activate the trigger; you need
+to state BEFORE or AFTER activation time for the 
+trigger
+
+For triggerEvent: it is an event so the trigger can
+be invoked; you can do that by INSERT, UPDATE or DELETE
+*If a triggerEvent needs to be invoked in many events then
+there has to be multiple triggers; one for each event.

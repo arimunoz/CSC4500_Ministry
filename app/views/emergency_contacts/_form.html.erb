@@ -1,0 +1,42 @@
+<%= form_with(model: emergency_contact, local: true) do |form| %>
+  <% if emergency_contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(emergency_contact.errors.count, "error") %> prohibited this emergency_contact from being saved:</h2>
+
+      <ul>
+      <% emergency_contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relationship %>
+    <%= form.text_field :relationship %>
+  </div>
+
+  <div class="field">
+    <%= form.label :camp_member_id %>
+    <%= form.text_field :camp_member_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

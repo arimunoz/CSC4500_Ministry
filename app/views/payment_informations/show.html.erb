@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name on card:</strong>
+  <%= @payment_information.name_on_card %>
+</p>
+
+<p>
+  <strong>Card number:</strong>
+  <%= @payment_information.card_number %>
+</p>
+
+<p>
+  <strong>Expiration date:</strong>
+  <%= @payment_information.expiration_date %>
+</p>
+
+<p>
+  <strong>Cvv:</strong>
+  <%= @payment_information.cvv %>
+</p>
+
+<p>
+  <strong>Amount paid:</strong>
+  <%= @payment_information.amount_paid %>
+</p>
+
+<p>
+  <strong>Payment type:</strong>
+  <%= @payment_information.payment_type %>
+</p>
+
+<p>
+  <strong>Camp member:</strong>
+  <%= @payment_information.camp_member %>
+</p>
+
+<%= link_to 'Edit', edit_payment_information_path(@payment_information) %> |
+<%= link_to 'Back', payment_informations_path %>

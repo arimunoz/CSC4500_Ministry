@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @camp_member.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @camp_member.last_name %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @camp_member.street %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @camp_member.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @camp_member.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @camp_member.zip %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @camp_member.phone_number %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @camp_member.dob %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @camp_member.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @camp_member.email %>
+</p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @camp_member.paid %>
+</p>
+
+<p>
+  <strong>Payment type:</strong>
+  <%= @camp_member.payment_type %>
+</p>
+
+<p>
+  <strong>Entered on:</strong>
+  <%= @camp_member.entered_on %>
+</p>
+
+<p>
+  <strong>Church:</strong>
+  <%= @camp_member.church %>
+</p>
+
+<%= link_to 'Edit', edit_camp_member_path(@camp_member) %> |
+<%= link_to 'Back', camp_members_path %>

@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Camp Members</h1>
-
+<%= link_to 'New Camp Member', new_camp_member_path %>
+<%= link_to 'Add Church', new_church_path %>
+<%= link_to 'List Churches', churches_path%>
+<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
 <table>
   <thead>
     <tr>
@@ -49,5 +52,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Camp Member', new_camp_member_path %>

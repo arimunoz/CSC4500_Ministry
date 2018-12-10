@@ -1,4 +1,7 @@
 class PaymentInformationsController < ApplicationController
+
+
+
   before_action :set_payment_information, only: [:show, :edit, :update, :destroy]
 
   # GET /payment_informations

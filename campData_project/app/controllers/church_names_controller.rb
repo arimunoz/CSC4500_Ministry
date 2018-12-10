@@ -1,4 +1,8 @@
 class ChurchNamesController < ApplicationController
+
+
+
+
   before_action :set_church_name, only: [:show, :edit, :update, :destroy]
 
   # GET /church_names

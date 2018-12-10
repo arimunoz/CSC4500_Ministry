@@ -1,0 +1,14 @@
+To make a branch so you don't commit to master:
+Create a branch name. And please name the branch to what your committing it to.
+
+git branch branchname //what your working on all one string
+git checkout branchName
+git add .
+git commit -m "commit-message"
+git push -u origin branchName
+------------push your branch to to master-----------
+git push -u origin branchName
+========================================================
+Someone else will review your branchName and commit it to master.
+Feel free to comment on the branch before commiting to master so we don't break it.
+Thank you!

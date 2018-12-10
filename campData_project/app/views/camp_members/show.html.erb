@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @camp_member.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @camp_member.last_name %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @camp_member.street %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @camp_member.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @camp_member.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @camp_member.zip %>
+</p>
+
+<%= link_to 'Edit', edit_camp_member_path(@camp_member) %> |
+<%= link_to 'Back', camp_members_path %>

@@ -1,11 +1,13 @@
 <div class="jumbotron">
   <% if user_signed_in? %>
-    <h1>Welcome back, trusted user!</h1>
+    <h1>Welcome back Leaders!</h1>
     <p class="lead">
-      You have signed in!  If this were a real app some sweet conent
-      would go here.  But it's just a test.  You might want to sign out now.
+      You have signed in!  Please register Camp Members for 2018.
+      But first check if your church is listed here. In Churches.
     </p>
-    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => 'btn btn-large btn-danger' %>
+    <%= link_to 'Camp Members', camp_members_path %>
+    <%= link_to 'Churches', churches_path %>
+    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
   <% else %>
     <h1>Welcome, new user!</h1>
     <p class="lead">
@@ -21,4 +23,5 @@
       </div>
     </div>
   <% end %>
+
 </div>

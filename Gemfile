@@ -70,3 +70,5 @@ gem 'devise'
 gem 'rails_admin_rollincode', '~> 1.0'
 # For Styling Application Login
 gem 'bootstrap-sass-rails', '~> 2.2.2.0'
+
+gem "audited", "~> 4.5"

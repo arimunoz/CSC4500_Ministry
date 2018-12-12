@@ -72,3 +72,4 @@ gem 'rails_admin_rollincode', '~> 1.0'
 gem 'bootstrap-sass-rails', '~> 2.2.2.0'
 
 gem "audited", "~> 4.5"
+gem 'cancancan', '~> 1.15'

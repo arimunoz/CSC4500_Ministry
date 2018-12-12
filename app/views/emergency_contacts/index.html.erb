@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Emergency Contacts</h1>
+<%= link_to 'List Camp Member', camp_members_path %>
+<%= link_to 'Add Church', new_church_path %>
+<%= link_to 'List Churches', churches_path%>
+<%= link_to 'Payment', payment_informations_path%>
+<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
 
 <table>
   <thead>
@@ -21,7 +26,7 @@
         <td><%= emergency_contact.last_name %></td>
         <td><%= emergency_contact.phone_number %></td>
         <td><%= emergency_contact.relationship %></td>
-        <td><%= emergency_contact.camp_member %></td>
+        <td><%= emergency_contact.camp_member_id %></td>
         <td><%= link_to 'Show', emergency_contact %></td>
         <td><%= link_to 'Edit', edit_emergency_contact_path(emergency_contact) %></td>
         <td><%= link_to 'Destroy', emergency_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>

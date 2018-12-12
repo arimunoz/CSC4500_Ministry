@@ -7,7 +7,21 @@
     </p>
     <%= link_to 'Camp Members', camp_members_path %>
     <%= link_to 'Churches', churches_path %>
+    <%= link_to 'Emergency Contacts', emergency_contacts_path%>
+    <%= link_to 'Payment', payment_informations_path%>
     <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    <h4>Announcements!! </h4>
+    <p class="lead">
+      Please check your email for further instructions.
+    </p>
+    <h4>Admin Page </h4>
+    <p class="lead">
+      <%= link_to 'Admin', rails_admin_path%>
+    </p>
+    <h4>Message Board </h4>
+    <p class="lead">
+      <%= link_to 'Message Dashboard', posts_path%>
+    </p>
   <% else %>
     <h1>Welcome, new user!</h1>
     <p class="lead">
